@@ -35,10 +35,10 @@ class User:
     def enable(self):
         self.is_enabled = True
         
-    def change_to_Spanish(self):
+    def set_to_Spanish(self):
         self.language = "Spanish"
         
-    def English(self):
+    def set_to_English(self):
         self.language = "English"
 
 
