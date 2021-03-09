@@ -1,20 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
-import pickle
-
-
-# In[21]:
+# In[43]:
 
 
 class User:
-    def __init__(self, name, timezone, is_enabled, language):
-        self.name = name
-        self.timezone = timezone
-        self.is_enabled = is_enabled
+    def __init__(self, first_name, last_name, language):
+        self.first_name = first_name
+        self.last_name = last_name
         self.language = language
         
     
@@ -24,16 +17,7 @@ class User:
         
     def show_language(self):
         print('My language is ',self.language)
-        
-    def change_timezone(self, timezone):
-        self.timezone = timezone
-        print('Timezone changed to: ',)
-        
-    def disable(self):
-        self.is_enabled = False
-    
-    def enable(self):
-        self.is_enabled = True
+
         
     def set_to_Spanish(self):
         self.language = "Spanish"
@@ -42,25 +26,29 @@ class User:
         self.language = "English"
 
 
-# In[31]:
+# In[44]:
 
 
-aashish = User("Aashish Nair", "EST", "True", "English")
+#class DailyReport:
+#    def __init__(self):
 
 
-# In[29]:
+# In[45]:
 
 
-pickle_class = open('Aashish.pkl', 'wb')
-pickle.dump(aashish, pickle_class)
-pickle_class.close()
+#class Appointment:
+#    def __init__(self, member, day, time):
+#        self.member = member # a list of members
+#        self.day = day # datetime variable
+#        self.time = time # datetime variable
+        
+        
 
 
-# In[30]:
+# In[46]:
 
 
-pickle_in = open('Aashish.pkl', 'rb')
-aashish = pickle.load(pickle_in)
+aashish = User("Aashish", "Nair", "English")
 
 
 # In[ ]:
