@@ -10,11 +10,6 @@ This is my third prototype of the DailyBot chatbot. The final microservice that 
 3. Support English and Spanish
 4. Provide an intention-based response generator
 
-<<<<<<< HEAD
-## Files
-
-## Running the Code
-=======
 During the construction of the chatbot, other features were added to the scope of the project. These include:
 
 1. A feature that saves user queries that are not identified by the bot
@@ -38,6 +33,9 @@ Finally, the "Chatbot.ipynb" file is a comprehensive python notebook file that s
 ## Running the Code
 
 Running the code should be straightforward. For users wishing to simply try the chatbot, running the "test_chatbot.py" will be enough. It should be noted that the libraries in the "requirements.txt" file should be installed prior to running the code. Furthermore, the code requires the data from the json files as well as the models, so running the code will require downloading/cloning the whole repo. 
+
+The code in "test_chatbot.py" currently uses data from 2 fake user objects: "aashish_user" and "sergio_user". To test the chatbot in English, set line 536 to "queries_list = chatbot(aashish_user)". To test the chatbot in Spanish, set line 536 to "queries_list = chatbot(sergio_user)".
+
 
 
 ## Conclusion
