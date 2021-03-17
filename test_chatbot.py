@@ -533,7 +533,7 @@ def chatbot(user):
 # In[53]:
 
 # Use "aashish_user" as parameter for English and "sergio_user" as parameter for Spanish
-queries_list = chatbot(aashish_user)
+queries_list = chatbot(sergio_user)
 
 
 # In[54]:
